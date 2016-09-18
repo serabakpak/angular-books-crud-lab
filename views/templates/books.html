@@ -1,0 +1,59 @@
+<div class="container" ng-controller="BooksIndexController as booksIndexCtrl">
+  <div ng-repeat="book in booksIndexCtrl.books" class="row">
+    <div class="row">
+      <div class="four columns">
+        <img src="../../public/images/800x800.png" alt="book image">
+        <p>{{book.name}}</p>
+        <p>{{book.authorName}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+         <!-- <div class='row'>
+           <div class="4 columns">
+
+
+           <div class="col-md-9 col-xs-12">
+             <ul class="list-group form-inline">
+               <li class="list-group-item">
+                 <h4 class='inline-header'>Album Name:</h4>
+                 <span ng-hide="editing">
+
+                   <a ng-href="albums/{{album._id}}">{{album.name}}</a>
+
+                 </span>
+                 <input ng-show="editing" ng-model="album.name" type="text" class="form-control input-md">
+               </li>
+
+               <li class="list-group-item">
+                 <h4 class='inline-header'>Artist Name:</h4>
+                 <span ng-hide="editing">{{album.artistName}}</span>
+                 <input ng-show="editing" ng-model="album.artistName" type="text" class="form-control input-md">
+               </li>
+
+               <li class="list-group-item">
+                 <h4 class='inline-header'>Released date:</h4>
+                 <span ng-hide="editing">{{album.releaseDate}}</span>
+                 <input ng-show="editing" ng-model="album.releaseDate" type="text" class="form-control input-md">
+               </li>
+             </ul>
+           </div>
+         </div>
+
+         <div class='panel-footer'>
+           <div class='panel-footer'>
+             <button class='btn btn-danger' ng-click="albumsIndexCtrl.deleteAlbum(album)">Delete Album</button>
+             <button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Edit Album</button>
+             <button class='btn btn-success' ng-show="editing" ng-click="albumsIndexCtrl.editAlbum(album); editing = false">Save Changes</button>
+           </div>
+         </div> 
+
+</div>
+</div> -->
