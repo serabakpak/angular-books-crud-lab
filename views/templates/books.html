@@ -1,13 +1,13 @@
 <div class="container" ng-controller="BooksIndexController as booksIndexCtrl">
-  <div ng-repeat="book in booksIndexCtrl.books" class="row">
+  <div ng-repeat="book in booksIndexCtrl.books" >
     <div class="row">
-      <div class="four columns">
-        <img src="../../public/images/800x800.png" alt="book image">
-        <p>{{book.name}}</p>
-        <p>{{book.authorName}}</p>
+      <div class="col-md-3">
+        <img ng-src="{{book.image}}" alt="book image">
+        <p>{{book.title}}</p>
+        <p>{{book.author}}</p>
       </div>
     </div>
-  </div>
+  
 </div>
 
 

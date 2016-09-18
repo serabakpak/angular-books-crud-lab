@@ -1,25 +1,8 @@
 angular
-  .module('booksApp', ['ngRoute'])
-  .controller('BooksIndexController', BooksIndexController)
+  .module('booksApp', ['ngRoute'])  
   .config(config);
 
-
-function BooksIndexController ($http) {
-  var vm = this;
-
-  vm.books = [
-    { name: 'HP1', authorName: 'J.K.'
-
-    }, 
-    {name: 'HP2', authorName: 'J.K. Rowling'},
-    { name: 'HP3', authorName: 'J.K.'
-
-    }, 
-    {name: 'HP3', authorName: 'J.K. Rowling'}
-    ]
-
-}
-
+console.log('a');
 
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config( $routeProvider, $locationProvider ) {
