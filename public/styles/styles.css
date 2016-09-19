@@ -1,3 +1,16 @@
-img {
+h1 {
+	text-align: center;
+}
+.image-books {
 	width: 100%;
 }
+
+.image-show {
+	width: 100%;
+}
+
+.inline-header {
+	display: inline-block;  
+	
+}
+
